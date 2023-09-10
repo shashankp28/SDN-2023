@@ -1,0 +1,25 @@
+Midsem Scheduling
+
+Inputs:
+1. Set of Days
+2. Two Slots
+3. Students -> courses mapping
+4. Venues -> Venue Seats mapping
+
+
+Outputs:
+Binary Matrix X of size (Days * Slots * Courses * Venues * Students)
+
+Constraints:
+1. A theory Course is scheduled on a single Slot
+2. A student has atmost exam per slot
+3. Total courses scheduled should not exceed capacity of Venue
+4. Each student has exactly one venue and slot for each of his courses
+5. Each course must be scheduled at the designated campus
+6. Each student has atmost one exam per Day
+
+Objective:
+1. Minimize the total number of slots utilized
+2. Minimize total number of venues utilized
+3. Maximize the average gap between consecutive exams per student
+4. Minimize number fo venues per course
