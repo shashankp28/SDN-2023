@@ -1,0 +1,218 @@
+-------------------------------------------------
+
+
+--------------------- SLOT-1 --------------------
+
+-------------------------------------------------
+| Course Name (THRY): 1                         |
+-------------------------------------------------
+| Student: 1             | Venue: 1             |
+| Student: 2             | Venue: 1             |
+| Student: 3             | Venue: 1             |
+| Student: 5             | Venue: 1             |
+| Student: 7             | Venue: 1             |
+| Student: 8             | Venue: 1             |
+| Student: 10            | Venue: 1             |
+| Student: 11            | Venue: 1             |
+| Student: 12            | Venue: 1             |
+| Student: 13            | Venue: 1             |
+| Student: 14            | Venue: 1             |
+| Student: 15            | Venue: 1             |
+| Student: 16            | Venue: 1             |
+| Student: 18            | Venue: 1             |
+| Student: 20            | Venue: 1             |
+| Student: 21            | Venue: 1             |
+| Student: 22            | Venue: 1             |
+| Student: 23            | Venue: 1             |
+| Student: 25            | Venue: 1             |
+| Student: 26            | Venue: 1             |
+| Student: 27            | Venue: 1             |
+| Student: 28            | Venue: 1             |
+| Student: 29            | Venue: 1             |
+-------------------------------------------------
+
+
+--------------------- SLOT-5 --------------------
+
+-------------------------------------------------
+| Course Name (LABS): 5                         |
+-------------------------------------------------
+| Student: 25            | Venue: 4             |
+| Student: 28            | Venue: 4             |
+| Student: 21            | Venue: 6             |
+| Student: 14            | Venue: 9             |
+-------------------------------------------------
+| Course Name (THRY): 7                         |
+-------------------------------------------------
+| Student: 0             | Venue: 1             |
+| Student: 1             | Venue: 1             |
+| Student: 2             | Venue: 1             |
+| Student: 4             | Venue: 1             |
+| Student: 5             | Venue: 1             |
+| Student: 6             | Venue: 1             |
+| Student: 7             | Venue: 1             |
+| Student: 9             | Venue: 1             |
+| Student: 10            | Venue: 1             |
+| Student: 15            | Venue: 1             |
+| Student: 16            | Venue: 1             |
+| Student: 17            | Venue: 1             |
+| Student: 18            | Venue: 1             |
+| Student: 19            | Venue: 1             |
+| Student: 20            | Venue: 1             |
+| Student: 22            | Venue: 1             |
+| Student: 24            | Venue: 1             |
+| Student: 26            | Venue: 1             |
+| Student: 27            | Venue: 1             |
+| Student: 29            | Venue: 1             |
+-------------------------------------------------
+
+
+--------------------- SLOT-7 --------------------
+
+-------------------------------------------------
+| Course Name (THRY): 3                         |
+-------------------------------------------------
+| Student: 0             | Venue: 1             |
+| Student: 1             | Venue: 1             |
+| Student: 3             | Venue: 1             |
+| Student: 4             | Venue: 1             |
+| Student: 5             | Venue: 1             |
+| Student: 7             | Venue: 1             |
+| Student: 8             | Venue: 1             |
+| Student: 9             | Venue: 1             |
+| Student: 11            | Venue: 1             |
+| Student: 12            | Venue: 1             |
+| Student: 13            | Venue: 1             |
+| Student: 14            | Venue: 1             |
+| Student: 15            | Venue: 1             |
+| Student: 16            | Venue: 1             |
+| Student: 18            | Venue: 1             |
+| Student: 19            | Venue: 1             |
+| Student: 20            | Venue: 1             |
+| Student: 21            | Venue: 1             |
+| Student: 22            | Venue: 1             |
+| Student: 24            | Venue: 1             |
+| Student: 26            | Venue: 1             |
+| Student: 27            | Venue: 1             |
+| Student: 28            | Venue: 1             |
+| Student: 29            | Venue: 1             |
+-------------------------------------------------
+
+
+--------------------- SLOT-8 --------------------
+
+-------------------------------------------------
+| Course Name (THRY): 4                         |
+-------------------------------------------------
+| Student: 2             | Venue: 0             |
+| Student: 4             | Venue: 0             |
+| Student: 6             | Venue: 0             |
+| Student: 10            | Venue: 0             |
+| Student: 13            | Venue: 0             |
+| Student: 16            | Venue: 0             |
+| Student: 17            | Venue: 0             |
+| Student: 18            | Venue: 0             |
+| Student: 19            | Venue: 0             |
+| Student: 20            | Venue: 0             |
+| Student: 21            | Venue: 0             |
+| Student: 22            | Venue: 0             |
+| Student: 23            | Venue: 0             |
+| Student: 25            | Venue: 0             |
+| Student: 29            | Venue: 0             |
+-------------------------------------------------
+| Course Name (LABS): 5                         |
+-------------------------------------------------
+| Student: 0             | Venue: 1             |
+| Student: 1             | Venue: 1             |
+| Student: 3             | Venue: 1             |
+| Student: 15            | Venue: 1             |
+| Student: 24            | Venue: 1             |
+| Student: 26            | Venue: 1             |
+| Student: 27            | Venue: 1             |
+-------------------------------------------------
+
+
+--------------------- SLOT-14 --------------------
+
+-------------------------------------------------
+| Course Name (LABS): 5                         |
+-------------------------------------------------
+| Student: 4             | Venue: 1             |
+-------------------------------------------------
+| Course Name (THRY): 6                         |
+-------------------------------------------------
+| Student: 0             | Venue: 0             |
+| Student: 1             | Venue: 0             |
+| Student: 2             | Venue: 0             |
+| Student: 3             | Venue: 0             |
+| Student: 8             | Venue: 0             |
+| Student: 9             | Venue: 0             |
+| Student: 11            | Venue: 0             |
+| Student: 12            | Venue: 0             |
+| Student: 15            | Venue: 0             |
+| Student: 17            | Venue: 0             |
+| Student: 19            | Venue: 0             |
+| Student: 21            | Venue: 0             |
+| Student: 24            | Venue: 0             |
+| Student: 25            | Venue: 0             |
+| Student: 29            | Venue: 0             |
+-------------------------------------------------
+
+
+--------------------- SLOT-17 --------------------
+
+-------------------------------------------------
+| Course Name (THRY): 2                         |
+-------------------------------------------------
+| Student: 0             | Venue: 0             |
+| Student: 3             | Venue: 0             |
+| Student: 4             | Venue: 0             |
+| Student: 6             | Venue: 0             |
+| Student: 8             | Venue: 0             |
+| Student: 11            | Venue: 0             |
+| Student: 12            | Venue: 0             |
+| Student: 14            | Venue: 0             |
+| Student: 15            | Venue: 0             |
+| Student: 17            | Venue: 0             |
+| Student: 21            | Venue: 0             |
+| Student: 22            | Venue: 0             |
+| Student: 24            | Venue: 0             |
+| Student: 26            | Venue: 0             |
+| Student: 27            | Venue: 0             |
+| Student: 28            | Venue: 0             |
+-------------------------------------------------
+| Course Name (LABS): 5                         |
+-------------------------------------------------
+| Student: 2             | Venue: 1             |
+| Student: 9             | Venue: 1             |
+| Student: 10            | Venue: 1             |
+| Student: 13            | Venue: 1             |
+| Student: 16            | Venue: 1             |
+| Student: 18            | Venue: 1             |
+| Student: 19            | Venue: 1             |
+| Student: 23            | Venue: 1             |
+| Student: 29            | Venue: 1             |
+-------------------------------------------------
+
+
+--------------------- SLOT-19 --------------------
+
+-------------------------------------------------
+| Course Name (THRY): 0                         |
+-------------------------------------------------
+| Student: 2             | Venue: 1             |
+| Student: 8             | Venue: 1             |
+| Student: 20            | Venue: 1             |
+| Student: 24            | Venue: 1             |
+| Student: 25            | Venue: 1             |
+| Student: 0             | Venue: 4             |
+| Student: 4             | Venue: 4             |
+| Student: 16            | Venue: 4             |
+| Student: 19            | Venue: 4             |
+| Student: 23            | Venue: 4             |
+| Student: 27            | Venue: 4             |
+| Student: 5             | Venue: 9             |
+| Student: 13            | Venue: 9             |
+| Student: 14            | Venue: 9             |
+| Student: 18            | Venue: 9             |
+-------------------------------------------------
