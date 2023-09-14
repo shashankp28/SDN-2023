@@ -18,6 +18,4 @@ To run the code, the following steps are to be followed
    You can change the inputs in the Inputs section
    ```
 
-5. The saved model will be in the file `scheduler.mlp`
-
-6. The outputs will be generated in the `schedule.txt` file
+5. The outputs will be generated in the `schedule.txt` file
