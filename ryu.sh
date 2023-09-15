@@ -1,0 +1,1 @@
+docker run -it -d --restart always --name ryu_container --privileged -e DISPLAY=$DISPLAY \-v /tmp/.X11-unix:/tmp/.X11-unix \-v /lib/modules:/lib/modules \osrg/ryu-book
