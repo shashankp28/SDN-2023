@@ -2,6 +2,7 @@ from mininet.topo import Topo
 from mininet.net import Mininet
 from mininet.cli import CLI
 from mininet.node import RemoteController, OVSSwitch
+import subprocess
 
 class MyTopology(Topo):
     
@@ -25,5 +26,3 @@ net = Mininet(
     autoSetMacs=True
 )
 net.start()
-CLI(net)
-net.stop()
