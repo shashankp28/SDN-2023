@@ -12,7 +12,7 @@ RUN apt install -y net-tools
 RUN apt install -y git
 
 # Install Java 8
-RUN apt install -y openjdk-8-jdk
+RUN apt install -y openjdk-11-jdk
 
 # Export Java 8 as JAVA_HOME
 
@@ -36,14 +36,21 @@ RUN cd /tmp && tar -zxvf karaf-0.8.4.tar.gz
 RUN mv /tmp/karaf-0.8.4 /opt/karaf-0.8.4
 
 
+# Copy Sample RYU Project
+COPY RYU-Projects /home/RYU-Projects
+
 # Expose required ports
-EXPOSE 6633 6653
+EXPOSE 6633
+EXPOSE 6653
+EXPOSE 1099
+EXPOSE 8180
+EXPOSE 8181
 
 # Copy bash profile
 COPY .bashrc /root/.bashrc
 
 # Set Environment Variables
-ENV JAVA_HOME=java-8-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 # Clean up to reduce image size
 # RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
