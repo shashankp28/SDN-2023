@@ -13,6 +13,7 @@ RUN apt install -y git
 
 # Install Java 8
 RUN apt install -y openjdk-8-jdk
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 # Install Open V Switch
 RUN apt install -y openvswitch-switch
@@ -32,10 +33,6 @@ RUN cd ryu && pip install .
 RUN cd /tmp && wget https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/0.8.4/karaf-0.8.4.tar.gz
 RUN cd /tmp && tar -zxvf karaf-0.8.4.tar.gz
 RUN mv /tmp/karaf-0.8.4 /opt/karaf-0.8.4
-
-# Clone Sample Projects from Github
-RUN cd /tmp && git clone https://github.com/shashankp28/SDN-Sample.git
-RUN cd /tmp && cp -r SDN-Sample/* /home/
 
 # Install Maven 3.9.5
 RUN cd /tmp && wget https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz
@@ -57,8 +54,10 @@ EXPOSE 8181
 # Copy bash profile
 COPY .bashrc /root/.bashrc
 
-# Set Environment Variables
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+# Clone Sample Projects from Github
+RUN cd /tmp && cd ..
+RUN cd /tmp && git clone https://github.com/shashankp28/SDN-Sample.git
+RUN cd /tmp && cp -r SDN-Sample/* /home/
 
 # Clean up to reduce image size
 # RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
