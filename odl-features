@@ -1,6 +1,0 @@
-feature:install odl-restconf odl-l2switch-switch odl-mdsal-apidocs odl-mdsal-clustering
-feature:install odl-dlux-core odl-dluxapps-nodes odl-dluxapps-topology odl-dluxapps-yangui odl-dluxapps-yangvisualizer odl-dluxapps-yangman
-
-// GUI: http://<ip>:8181/index.html
-// Username: admin
-// Password: admin

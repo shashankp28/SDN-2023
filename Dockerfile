@@ -12,9 +12,7 @@ RUN apt install -y net-tools
 RUN apt install -y git
 
 # Install Java 8
-RUN apt install -y openjdk-11-jdk
-
-# Export Java 8 as JAVA_HOME
+RUN apt install -y openjdk-8-jdk
 
 # Install Open V Switch
 RUN apt install -y openvswitch-switch
@@ -35,9 +33,19 @@ RUN cd /tmp && wget https://nexus.opendaylight.org/content/repositories/opendayl
 RUN cd /tmp && tar -zxvf karaf-0.8.4.tar.gz
 RUN mv /tmp/karaf-0.8.4 /opt/karaf-0.8.4
 
+# Clone Sample Projects from Github
+RUN cd /tmp && git clone https://github.com/shashankp28/SDN-Sample.git
+RUN cd /tmp && cp -r SDN-Sample/* /home/
 
-# Copy Sample RYU Project
-COPY RYU-Projects /home/RYU-Projects
+# Install Maven 3.9.5
+RUN cd /tmp && wget https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz
+RUN cd /tmp && tar xvf apache-maven-3.9.5-bin.tar.gz -C /opt
+ENV M2_HOME=/opt/apache-maven-3.9.5
+ENV PATH ${M2_HOME}/bin:${PATH}
+
+# Setup Maven for ODL
+RUN mkdir ~/.m2
+RUN wget -q -O - https://raw.githubusercontent.com/opendaylight/odlparent/master/settings.xml > ~/.m2/settings.xml
 
 # Expose required ports
 EXPOSE 6633
@@ -50,7 +58,7 @@ EXPOSE 8181
 COPY .bashrc /root/.bashrc
 
 # Set Environment Variables
-ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 # Clean up to reduce image size
 # RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
