@@ -57,7 +57,7 @@ RUN ln -s /usr/bin/bazel-3.7.2 /usr/bin/bazel
 # Install ONOS 2.7.0
 RUN cd /tmp && git clone https://gerrit.onosproject.org/onos
 RUN cd /tmp/onos && git checkout 2.7.0
-RUN cd /tmp/onos && bazel build onos
+# RUN cd /tmp/onos && bazel build onos
 
 # Expose required ports
 EXPOSE 6633

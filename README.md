@@ -1,6 +1,7 @@
 # SDN Development Environment
 
 The SDN development environment has the following specifications
+
 ```
 OS: Ubuntu 20.04
 
@@ -23,18 +24,27 @@ Default ONOS: Version 2.7.0
 
 ## Installation
 
-1. Install Docker from the official website
+1. Install Docker Engine from the official website:
 
-**Note:** Make sure that you are able to add docker to sudo group. So as to run docker commands without sudo.
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker $USER
+newgrp docker
+```
 
-2. Open VSCode and install the `Docker` Extension for VSCode, this will help you to manage the docker containers from VSCode.
+**Note:** Make sure that you are able to add Docker to sudo group. So as to run Docker commands without sudo.
 
-3. Run the following command to pull and build Docker image for SDN development environment
+2. Open VSCode and install the `Docker` Extension for VSCode, this will help you to manage the Docker containers from VSCode.
+
+3. Run the following command to pull and run Docker image for SDN development environment
+
 ```
 # TODO
 ```
 
 4. Once the container is Run, you should be able to see it in the `Containers` Tab of the Docker Extension for VSCode.
+
 ```
 Container Name: sdn:latest
 ```
@@ -45,12 +55,14 @@ Container Name: sdn:latest
 
 ## IMPORTANT NOTE:
 
-1. Since newer versions of `ODL` do not support dlux (GUI), before starting a project in ***ODL*** make sure to change **JAVA_HOME** path to `jdk-8`:
+1. Since newer versions of `ODL` do not support dlux (GUI), before starting a project in **_ODL_** make sure to change **JAVA_HOME** path to `jdk-8`:
+
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ```
 
-2. ONOS requires `bazel` to build the project, which runs on JDK-11. So before starting a project in ***ONOS*** make sure to change **JAVA_HOME** path to `jdk-11`:
+2. ONOS requires `bazel` to build the project, which runs on JDK-11. So before starting a project in **_ONOS_** make sure to change **JAVA_HOME** path to `jdk-11`:
+
 ```
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```
