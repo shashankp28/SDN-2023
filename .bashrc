@@ -5480,3 +5480,4 @@ if [[ $TILIX_ID ]] || [[ $VTE_VERSION ]]; then
 fi
 
 alias opendl='/opt/karaf-0.8.4/bin/karaf'
+alias python='/usr/bin/python3'
