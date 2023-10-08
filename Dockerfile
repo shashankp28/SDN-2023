@@ -13,6 +13,7 @@ RUN apt install -y git
 
 # Install Java 8
 RUN apt install -y openjdk-8-jdk
+RUN apt install -y openjdk-11-jdk
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 # Install Open V Switch
@@ -43,6 +44,20 @@ ENV PATH ${M2_HOME}/bin:${PATH}
 # Setup Maven for ODL
 RUN mkdir ~/.m2
 RUN wget -q -O - https://raw.githubusercontent.com/opendaylight/odlparent/master/settings.xml > ~/.m2/settings.xml
+
+# Install bazel 3.7.2
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+RUN apt install apt-transport-https curl gnupg -y
+RUN curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel-archive-keyring.gpg
+RUN mv bazel-archive-keyring.gpg /usr/share/keyrings
+RUN echo "deb [arch=amd64 signed-by=/usr/share/keyrings/bazel-archive-keyring.gpg] https://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list
+RUN apt update && apt install bazel-3.7.2 -y
+RUN ln -s /usr/bin/bazel-3.7.2 /usr/bin/bazel
+
+# Install ONOS 2.7.0
+RUN cd /tmp && git clone https://gerrit.onosproject.org/onos
+RUN cd /tmp/onos && git checkout 2.7.0
+RUN cd /tmp/onos && bazel build onos
 
 # Expose required ports
 EXPOSE 6633
