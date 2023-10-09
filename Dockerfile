@@ -55,13 +55,13 @@ RUN apt update && apt install bazel-3.7.2 -y
 RUN ln -s /usr/bin/bazel-3.7.2 /usr/bin/bazel
 
 # Install ONOS 2.7.0
-RUN cd /tmp && git clone https://gerrit.onosproject.org/onos
-RUN cd /tmp/onos && git checkout 2.7.0
+RUN git clone https://gerrit.onosproject.org/onos
+RUN cd onos && git checkout 2.7.0
 RUN apt install python2 -y
 RUN ln -s /usr/bin/python2 /usr/bin/python
 RUN apt install zip -y
-RUN cd /tmp/onos && bazel build onos; exit 0
-RUN cd /tmp/onos && bazel build onos
+RUN cd onos && bazel build onos; exit 0
+RUN cd onos && bazel build onos
 
 # Expose required ports
 EXPOSE 6633
