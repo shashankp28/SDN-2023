@@ -59,6 +59,8 @@ RUN cd /tmp && git clone https://gerrit.onosproject.org/onos
 RUN cd /tmp/onos && git checkout 2.7.0
 RUN apt install python2 -y
 RUN ln -s /usr/bin/python2 /usr/bin/python
+RUN apt install zip -y
+RUN cd /tmp/onos && bazel build onos; exit 0
 RUN cd /tmp/onos && bazel build onos
 
 # Expose required ports
